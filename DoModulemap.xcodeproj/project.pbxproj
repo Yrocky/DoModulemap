@@ -14,6 +14,10 @@
 		32D11E6A24BD4FC100982F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D11E6924BD4FC100982F27 /* Assets.xcassets */; };
 		32D11E6D24BD4FC100982F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D11E6B24BD4FC100982F27 /* LaunchScreen.storyboard */; };
 		32D11E7824BD4FC100982F27 /* DoModulemapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D11E7724BD4FC100982F27 /* DoModulemapTests.swift */; };
+		32D11E8524BD506800982F27 /* MMDelegateService.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D11E8424BD506800982F27 /* MMDelegateService.m */; };
+		32D11E8D24BD578B00982F27 /* MMConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D11E8C24BD578B00982F27 /* MMConversation.m */; };
+		32D11E9624BD5C2C00982F27 /* XXXElevator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D11E9524BD5C2C00982F27 /* XXXElevator.m */; };
+		32D11E9924BD5F7700982F27 /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D11E9724BD5F7600982F27 /* UIColor+Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,17 @@
 		32D11E7324BD4FC100982F27 /* DoModulemapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoModulemapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D11E7724BD4FC100982F27 /* DoModulemapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoModulemapTests.swift; sourceTree = "<group>"; };
 		32D11E7924BD4FC100982F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D11E8324BD506800982F27 /* MMDelegateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDelegateService.h; sourceTree = "<group>"; };
+		32D11E8424BD506800982F27 /* MMDelegateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDelegateService.m; sourceTree = "<group>"; };
+		32D11E8724BD50B000982F27 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		32D11E8924BD517F00982F27 /* MMDelegateService-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMDelegateService-header.h"; sourceTree = "<group>"; };
+		32D11E8B24BD578B00982F27 /* MMConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMConversation.h; sourceTree = "<group>"; };
+		32D11E8C24BD578B00982F27 /* MMConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMConversation.m; sourceTree = "<group>"; };
+		32D11E8F24BD57F700982F27 /* MMConversation-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMConversation-header.h"; sourceTree = "<group>"; };
+		32D11E9424BD5C2B00982F27 /* XXXElevator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXXElevator.h; sourceTree = "<group>"; };
+		32D11E9524BD5C2C00982F27 /* XXXElevator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXXElevator.m; sourceTree = "<group>"; };
+		32D11E9724BD5F7600982F27 /* UIColor+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Common.m"; sourceTree = "<group>"; };
+		32D11E9824BD5F7700982F27 /* UIColor+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +97,7 @@
 				32D11E6024BD4FBE00982F27 /* AppDelegate.swift */,
 				32D11E6224BD4FBE00982F27 /* SceneDelegate.swift */,
 				32D11E6424BD4FBE00982F27 /* ViewController.swift */,
+				32D11E8224BD502700982F27 /* lib */,
 				32D11E6624BD4FBE00982F27 /* Main.storyboard */,
 				32D11E6924BD4FC100982F27 /* Assets.xcassets */,
 				32D11E6B24BD4FC100982F27 /* LaunchScreen.storyboard */,
@@ -97,6 +113,64 @@
 				32D11E7924BD4FC100982F27 /* Info.plist */,
 			);
 			path = DoModulemapTests;
+			sourceTree = "<group>";
+		};
+		32D11E8224BD502700982F27 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				32D11E8624BD507100982F27 /* include */,
+				32D11E9A24BD5F8500982F27 /* UIColor+Common */,
+				32D11E9324BD5BCD00982F27 /* Elevator */,
+				32D11E8E24BD579100982F27 /* Conversation */,
+				32D11E8A24BD56F500982F27 /* DelegateService */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		32D11E8624BD507100982F27 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				32D11E8724BD50B000982F27 /* module.modulemap */,
+				32D11E8924BD517F00982F27 /* MMDelegateService-header.h */,
+				32D11E8F24BD57F700982F27 /* MMConversation-header.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		32D11E8A24BD56F500982F27 /* DelegateService */ = {
+			isa = PBXGroup;
+			children = (
+				32D11E8324BD506800982F27 /* MMDelegateService.h */,
+				32D11E8424BD506800982F27 /* MMDelegateService.m */,
+			);
+			path = DelegateService;
+			sourceTree = "<group>";
+		};
+		32D11E8E24BD579100982F27 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				32D11E8B24BD578B00982F27 /* MMConversation.h */,
+				32D11E8C24BD578B00982F27 /* MMConversation.m */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		32D11E9324BD5BCD00982F27 /* Elevator */ = {
+			isa = PBXGroup;
+			children = (
+				32D11E9424BD5C2B00982F27 /* XXXElevator.h */,
+				32D11E9524BD5C2C00982F27 /* XXXElevator.m */,
+			);
+			path = Elevator;
+			sourceTree = "<group>";
+		};
+		32D11E9A24BD5F8500982F27 /* UIColor+Common */ = {
+			isa = PBXGroup;
+			children = (
+				32D11E9824BD5F7700982F27 /* UIColor+Common.h */,
+				32D11E9724BD5F7600982F27 /* UIColor+Common.m */,
+			);
+			path = "UIColor+Common";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +223,7 @@
 				TargetAttributes = {
 					32D11E5C24BD4FBE00982F27 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					32D11E7224BD4FC100982F27 = {
 						CreatedOnToolsVersion = 11.5;
@@ -200,9 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D11E9624BD5C2C00982F27 /* XXXElevator.m in Sources */,
+				32D11E8524BD506800982F27 /* MMDelegateService.m in Sources */,
 				32D11E6524BD4FBE00982F27 /* ViewController.swift in Sources */,
+				32D11E8D24BD578B00982F27 /* MMConversation.m in Sources */,
 				32D11E6124BD4FBE00982F27 /* AppDelegate.swift in Sources */,
 				32D11E6324BD4FBE00982F27 /* SceneDelegate.swift in Sources */,
+				32D11E9924BD5F7700982F27 /* UIColor+Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PF3BSY7RH3;
 				INFOPLIST_FILE = DoModulemap/Info.plist;
@@ -371,6 +451,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.banbanlive.DoModulemap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/DoModulemap/lib/include";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PF3BSY7RH3;
 				INFOPLIST_FILE = DoModulemap/Info.plist;
@@ -389,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.banbanlive.DoModulemap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/DoModulemap/lib/include";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

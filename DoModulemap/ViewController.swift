@@ -7,12 +7,30 @@
 //
 
 import UIKit
+import Ease
+import Elevator
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let delegateService = MMDelegateService(delegates: [self])
+        delegateService?.addDelegate("one")
+        delegateService?.addDelegate("two")
+        delegateService?.removeDelegate("two")
+        
+        let con = MMConversation()
+        con.names = ["rocky"]
+        
+        let elevator = XXXElevator()
+        elevator.open()
+        elevator.run()
+        elevator.close()
+        elevator.stop()
+        
+//        view.backgroundColor = UIColor(hexString: "")
+        view.backgroundColor = UIColor.random()
     }
 
 
