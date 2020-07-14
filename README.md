@@ -1,9 +1,9 @@
 # DoModulemap
 学习llvm中的module-map-language
 
-// http://clang.llvm.org/docs/Modules.html#module-map-language
+http://clang.llvm.org/docs/Modules.html#module-map-language
 
-// 如果某些模块之间是有关联的，可以将他们放在一个module中，内部再使用子模块嵌套的方式进行export
+如果某些模块之间是有关联的，可以将他们放在一个module中，内部再使用子模块嵌套的方式进行export
 ``` c
 // in module.modulemap file
 module Ease {
